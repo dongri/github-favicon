@@ -1,5 +1,5 @@
 (function() {
-    let c = $("[itemprop=name]").text().charAt(0);
+    let c = $("[itemprop=name]").text().charAt(0).toLowerCase();
     var link = document.querySelector("link[rel*='icon']") || document.createElement('link');
     link.type = 'image/x-icon';
     link.rel = 'shortcut icon';
