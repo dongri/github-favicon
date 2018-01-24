@@ -1,0 +1,26 @@
+{
+  "name": "GitHub Favicon",
+  "version": "0.0.1",
+  "description": "GitHub Favicon",
+  "manifest_version": 2,
+  "background":{
+    "scripts":["background.js"]
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "http://github.com/*",
+        "https://github.com/*"
+      ],
+      "js": [
+        "jquery.js",
+        "favicon.js"
+      ]
+    }
+  ],
+  "browser_action": {
+    "default_icon": "icon.png"
+  },
+  "permissions": [
+  ]
+}
